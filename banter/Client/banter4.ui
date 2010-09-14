@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mbanter4</class>
+ <widget class="QMainWindow" name="Mbanter4">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>486</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mbanter4</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(236, 218, 180);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="chatwindow">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>10</y>
+      <width>341</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="userwindow">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>190</y>
+      <width>281</width>
+      <height>84</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>486</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionVoice_call"/>
+    <addaction name="actionCut_call"/>
+    <addaction name="actionCall_duration"/>
+    <addaction name="actionChat_history"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actionCut_2"/>
+    <addaction name="actionCopy_2"/>
+    <addaction name="actionPaste_2"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <action name="actionCut">
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+  <action name="actionVoice_chat">
+   <property name="text">
+    <string>voice chat</string>
+   </property>
+  </action>
+  <action name="actionCut_2">
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actionCopy_2">
+   <property name="text">
+    <string>copy</string>
+   </property>
+  </action>
+  <action name="actionPaste_2">
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+  <action name="actionVoice_call">
+   <property name="text">
+    <string>voice call</string>
+   </property>
+  </action>
+  <action name="actionCut_call">
+   <property name="text">
+    <string>cut call</string>
+   </property>
+  </action>
+  <action name="actionCall_duration">
+   <property name="text">
+    <string>call duration</string>
+   </property>
+  </action>
+  <action name="actionChat_history">
+   <property name="text">
+    <string>chat history</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
