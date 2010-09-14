@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>590</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>0</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color: rgb(170, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>search</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>161</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(240, 220, 190);</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>0</y>
+      <width>431</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236, 218, 180);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>590</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuUsers">
+    <property name="title">
+     <string>Users</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionCurrently_logged_in_3"/>
+   </widget>
+   <widget class="QMenu" name="menuCall_history">
+    <property name="title">
+     <string>Calls</string>
+    </property>
+    <addaction name="actionPresently_connected"/>
+    <addaction name="actionCall_History"/>
+   </widget>
+   <widget class="QMenu" name="menuCall_duration">
+    <property name="title">
+     <string>Call duration</string>
+    </property>
+    <addaction name="actionLast_call_duration"/>
+    <addaction name="actionTotal_call_duration"/>
+   </widget>
+   <addaction name="menuUsers"/>
+   <addaction name="menuCall_history"/>
+   <addaction name="menuCall_duration"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCurrently_logged_in">
+   <property name="text">
+    <string>currently logged in</string>
+   </property>
+  </action>
+  <action name="actionSas">
+   <property name="text">
+    <string>sas</string>
+   </property>
+  </action>
+  <action name="actionCurrently_logged_in_3">
+   <property name="text">
+    <string>Currently logged in</string>
+   </property>
+  </action>
+  <action name="actionLast_call_duration">
+   <property name="text">
+    <string>Last call duration</string>
+   </property>
+  </action>
+  <action name="actionTotal_call_duration">
+   <property name="text">
+    <string>Total call duration</string>
+   </property>
+  </action>
+  <action name="actionPresently_connected">
+   <property name="text">
+    <string>presently connected</string>
+   </property>
+  </action>
+  <action name="actionCall_History">
+   <property name="text">
+    <string>Call History</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../Desktop/server.qrc"/>
+ </resources>
+ <connections/>
+</ui>
