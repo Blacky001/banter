@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Mbanter2</class>
+ <widget class="QMainWindow" name="Mbanter2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>332</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>banter2</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 222, 197);
+background-color: rgb(236, 218, 180);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="list">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>90</y>
+      <width>261</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236, 218, 180);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>501</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QComboBox" name="status">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">selection-background-color: rgb(255, 249, 201);
+</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>status</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Desktop/nn/im-yahoo.png</normaloff>../Desktop/nn/im-yahoo.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>available</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Desktop/nn/gdu-smart-healthy.png</normaloff>../Desktop/nn/gdu-smart-healthy.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>busy</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Desktop/nn/media-record.png</normaloff>../Desktop/nn/media-record.png</iconset>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>idle</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../Desktop/nn/gdu-smart-threshold.png</normaloff>../Desktop/nn/gdu-smart-threshold.png</iconset>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="signout">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>0</y>
+       <width>93</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>signout</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>491</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="invite">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>0</y>
+       <width>211</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>invite a friend</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVoice_chat">
+   <property name="text">
+    <string>voice chat</string>
+   </property>
+  </action>
+  <action name="actionSing_out">
+   <property name="text">
+    <string>sign out</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionCut">
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actionCopy">
+   <property name="text">
+    <string>copy</string>
+   </property>
+  </action>
+  <action name="actionPaste">
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../Desktop/untitled folder/no.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>signout</sender>
+   <signal>clicked()</signal>
+   <receiver>Mbanter2</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>317</x>
+     <y>55</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>invite</sender>
+   <signal>clicked()</signal>
+   <receiver>Mbanter2</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>221</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
