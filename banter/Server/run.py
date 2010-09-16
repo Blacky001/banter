@@ -25,6 +25,13 @@ def display():
 	obj1.textBrowser_3.setText(name.cldrtn)
 	obj1.textBrowser_4.setText(name.lstcldrtn)
 	obj1.textBrowser_5.setText(name.lstclr)
+
+def display1():
+	item = QtGui.QListWidgetItem(obj.listWidget_2)
+	item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
+	obj.listWidget_2.item(0).setText(QtGui.QApplication.translate("MainWindow",name.cldrtn,None, QtGui.QApplication.UnicodeUTF8))
+	obj.listWidget_2.item(1).setText(QtGui.QApplication.translate("MainWindow",name.lstcldrtn,None, QtGui.QApplication.UnicodeUTF8))
+
 def users(i):
 	A={}
 	A=['ajay','divya','vijesh','swami','sangitha','krishna','shyja','noble','dhanya']
@@ -54,11 +61,11 @@ obj.listWidget_2.item(0).setText(QtGui.QApplication.translate("MainWindow","divy
 
 
 QtCore.QObject.connect(obj.pushButton, QtCore.SIGNAL("clicked()"), search)
-QtCore.QObject.connect(obj.actionTotal_call_duration, QtCore.SIGNAL("triggered()"),display)
-QtCore.QObject.connect(obj.actionLast_call_duration, QtCore.SIGNAL("triggered()"),display)
-QtCore.QObject.connect(obj.actionCurrently_logged_in_3, QtCore.SIGNAL("triggered()"),display)
-QtCore.QObject.connect(obj.actionCall_History, QtCore.SIGNAL("triggered()"),display)
-QtCore.QObject.connect(obj.actionPresently_connected, QtCore.SIGNAL("triggered()"),display)
+QtCore.QObject.connect(obj.actionTotal_call_duration, QtCore.SIGNAL("triggered()"),display1)
+QtCore.QObject.connect(obj.actionLast_call_duration, QtCore.SIGNAL("triggered()"),display1)
+QtCore.QObject.connect(obj.actionCurrently_logged_in_3, QtCore.SIGNAL("triggered()"),display1)
+QtCore.QObject.connect(obj.actionCall_History, QtCore.SIGNAL("triggered()"),display1)
+QtCore.QObject.connect(obj.actionPresently_connected, QtCore.SIGNAL("triggered()"),display1)
 QtCore.QObject.connect(obj.lineEdit, QtCore.SIGNAL("returnPressed()"),search)
 QtCore.QObject.connect(obj.listWidget, QtCore.SIGNAL("itemClicked(QListWidgetItem*)"),display)
 sys.exit(app.exec_())
