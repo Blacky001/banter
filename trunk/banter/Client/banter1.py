@@ -39,7 +39,7 @@ class Ui_MainWindow(object):
         self.password.setGeometry(QtCore.QRect(70, 190, 81, 27))
         self.password.setObjectName("password")
         self.forgetid = QtGui.QRadioButton(self.centralwidget)
-        self.forgetid.setGeometry(QtCore.QRect(190, 240, 161, 22))
+        self.forgetid.setGeometry(QtCore.QRect(199, 240, 161, 22))
         self.forgetid.setObjectName("forgetid")
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtGui.QStatusBar(MainWindow)
