@@ -29,7 +29,7 @@ def users(i):
 	A={}
 	A=['ajay','divya','vijesh','swami','sangitha','krishna','shyja','noble','dhanya']
 	icon = QtGui.QIcon()
-	icon.addPixmap(QtGui.QPixmap(":/newPrefix/banter/gdu-smart-healthy.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+	icon.addPixmap(QtGui.QPixmap(":/newPrefix/banter/gdu-smart-failing.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 	item = QtGui.QListWidgetItem(obj.listWidget)
 	item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
 	obj.listWidget.item(i).setText(QtGui.QApplication.translate("MainWindow",A[i],None, QtGui.QApplication.UnicodeUTF8))
