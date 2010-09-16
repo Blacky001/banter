@@ -1,6 +1,6 @@
 import server,details
 from PyQt4 import QtGui,QtCore
-import sys,os
+import sys,os,icon_rc
 class det():
 	def __init__(self):
 		self.name1=raw_input()
@@ -28,12 +28,13 @@ def display():
 def users(i):
 	A={}
 	A=['ajay','divya','vijesh','swami','sangitha','krishna','shyja','noble','dhanya']
-#	icon = QtGui.QIcon()
-#	icon.addPixmap(QtGui.QPixmap("/home/catfoss/banter/gdu-smart-healthy.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+	icon = QtGui.QIcon()
+	icon.addPixmap(QtGui.QPixmap(":/newPrefix/banter/gdu-smart-healthy.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
 	item = QtGui.QListWidgetItem(obj.listWidget)
 	item.setFlags(QtCore.Qt.ItemIsSelectable|QtCore.Qt.ItemIsEnabled)
 	obj.listWidget.item(i).setText(QtGui.QApplication.translate("MainWindow",A[i],None, QtGui.QApplication.UnicodeUTF8))
-#	item.setIcon(icon)
+	item.setIcon(icon)
+
 app = QtGui.QApplication(sys.argv)
 window = QtGui.QMainWindow()
 obj = server.Ui_MainWindow()
@@ -47,6 +48,8 @@ name=det()
 print "stop"
 for i in range(0,9):
 	users(i)
+item = QtGui.QListWidgetItem(obj.listWidget_2)
+obj.listWidget_2.item(0).setText(QtGui.QApplication.translate("MainWindow","divya calling ajay",None, QtGui.QApplication.UnicodeUTF8))
 
 
 

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'banter/server.ui'
 #
-# Created: Tue Sep 14 13:25:59 2010
+# Created: Wed Sep 15 14:40:49 2010
 #      by: PyQt4 UI code generator 4.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,7 +12,7 @@ from PyQt4 import QtCore, QtGui
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(590, 529)
+        MainWindow.resize(590, 512)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.lineEdit = QtGui.QLineEdit(self.centralwidget)
@@ -25,7 +25,10 @@ class Ui_MainWindow(object):
         self.pushButton.setObjectName("pushButton")
         self.listWidget = QtGui.QListWidget(self.centralwidget)
         self.listWidget.setGeometry(QtCore.QRect(0, 30, 161, 451))
-        self.listWidget.setStyleSheet("background-color: rgb(240, 220, 190);")
+        self.listWidget.setStyleSheet("""background-color: rgb(240, 220, 190);
+image: url(:/newPrefix/banter/gdu-smart-healthy.png);
+image: url(:/newPrefix/banter/gdu-smart-healthy.png);
+""")
         self.listWidget.setObjectName("listWidget")
         self.listWidget_2 = QtGui.QListWidget(self.centralwidget)
         self.listWidget_2.setGeometry(QtCore.QRect(160, 0, 431, 481))
@@ -86,3 +89,4 @@ class Ui_MainWindow(object):
         self.actionPresently_connected.setText(QtGui.QApplication.translate("MainWindow", "presently connected", None, QtGui.QApplication.UnicodeUTF8))
         self.actionCall_History.setText(QtGui.QApplication.translate("MainWindow", "Call History", None, QtGui.QApplication.UnicodeUTF8))
 
+import icon_rc
