@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="newPrefix" >
+    <file>banter/gdu-smart-failing.png</file>
+  </qresource>
+  <qresource prefix="newPrefix" >
+    <file>banter/gdu-smart-healthy.png</file>
+  </qresource>
+</RCC>
