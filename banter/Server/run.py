@@ -110,6 +110,5 @@ QtCore.QObject.connect(main.listWidget, QtCore.SIGNAL("itemClicked(QListWidgetIt
 QtCore.QObject.connect(msg.pushButton, QtCore.SIGNAL("clicked()"), sendbutton)
 QtCore.QObject.connect(msg.pushButton_2, QtCore.SIGNAL("clicked()"), discard)
 QtCore.QObject.connect(dtls.pushButton, QtCore.SIGNAL("clicked()"),sendtosingle)
-QtCore.QObject.connect(msg.lineEdit_2, QtCore.SIGNAL("returnPressed()"),sendbutton)
 QtCore.QObject.connect(strt.pushButton, QtCore.SIGNAL("clicked()"),start1)
 sys.exit(app.exec_())
