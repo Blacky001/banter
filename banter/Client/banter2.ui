@@ -6,38 +6,92 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>332</width>
-    <height>600</height>
+    <width>263</width>
+    <height>382</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>banter2</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 222, 197);
-background-color: rgb(236, 218, 180);</string>
+   <string notr="true">background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QListWidget" name="list">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>90</y>
-      <width>261</width>
-      <height>461</height>
+      <x>10</x>
+      <y>50</y>
+      <width>241</width>
+      <height>281</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(236, 218, 180);
 background-color: rgb(255, 255, 255);</string>
     </property>
+    <item>
+     <property name="text">
+      <string>krish</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>vijay</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ajay</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>manu</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sangeetha</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>vidya</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>shyja</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>divya</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>dhanya</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sunantha</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>maya</string>
+     </property>
+    </item>
    </widget>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>501</width>
+      <y>10</y>
+      <width>301</width>
       <height>31</height>
      </rect>
     </property>
@@ -97,48 +151,32 @@ background-color: rgb(255, 255, 255);</string>
       </property>
      </item>
     </widget>
-    <widget class="QPushButton" name="signout">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>0</y>
-       <width>93</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>signout</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QFrame" name="frame_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>30</y>
-      <width>491</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
     <widget class="QPushButton" name="invite">
      <property name="geometry">
       <rect>
-       <x>60</x>
+       <x>110</x>
        <y>0</y>
-       <width>211</width>
-       <height>21</height>
+       <width>151</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
       <string>invite a friend</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QCommandLinkButton" name="signout">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>330</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sign out</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -177,22 +215,6 @@ background-color: rgb(255, 255, 255);</string>
   <include location="../Desktop/untitled folder/no.qrc"/>
  </resources>
  <connections>
-  <connection>
-   <sender>signout</sender>
-   <signal>clicked()</signal>
-   <receiver>Mbanter2</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>292</x>
-     <y>20</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>317</x>
-     <y>55</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>invite</sender>
    <signal>clicked()</signal>
