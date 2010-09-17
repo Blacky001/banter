@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'banter/details.ui'
+# Form implementation generated from reading ui file 'Desktop/banter1/trunk/banter/Server/details.ui'
 #
-# Created: Tue Sep 14 13:28:46 2010
+# Created: Fri Sep 17 17:54:00 2010
 #      by: PyQt4 UI code generator 4.6
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,8 +12,9 @@ from PyQt4 import QtCore, QtGui
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
-        Dialog.resize(351, 496)
-        Dialog.setStyleSheet("background-color: rgb(170, 170, 170);")
+        Dialog.resize(351, 376)
+        Dialog.setStyleSheet("""background-color: rgb(220, 225,255);
+background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(157, 177, 195, 255));""")
         self.label = QtGui.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(10, 30, 62, 18))
         self.label.setObjectName("label")
@@ -52,6 +53,11 @@ class Ui_Dialog(object):
         self.textBrowser_5.setGeometry(QtCore.QRect(120, 230, 211, 21))
         self.textBrowser_5.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.textBrowser_5.setObjectName("textBrowser_5")
+        self.pushButton = QtGui.QPushButton(Dialog)
+        self.pushButton.setGeometry(QtCore.QRect(160, 300, 161, 31))
+        self.pushButton.setStyleSheet("""background-color: rgb(141, 141, 106);
+background-color: rgb(117, 127, 135);""")
+        self.pushButton.setObjectName("pushButton")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -66,4 +72,5 @@ class Ui_Dialog(object):
 "duration", None, QtGui.QApplication.UnicodeUTF8))
         self.label_6.setText(QtGui.QApplication.translate("Dialog", "Last \n"
 "caller:", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton.setText(QtGui.QApplication.translate("Dialog", "send message to", None, QtGui.QApplication.UnicodeUTF8))
 
