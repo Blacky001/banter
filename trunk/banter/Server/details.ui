@@ -7,14 +7,15 @@
     <x>0</x>
     <y>0</y>
     <width>351</width>
-    <height>496</height>
+    <height>376</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(170, 170, 170);</string>
+   <string notr="true">background-color: rgb(220, 225,255);
+background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(157, 177, 195, 255));</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -159,6 +160,23 @@ caller:</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>300</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(141, 141, 106);
+background-color: rgb(117, 127, 135);</string>
+   </property>
+   <property name="text">
+    <string>send message to</string>
    </property>
   </widget>
  </widget>
