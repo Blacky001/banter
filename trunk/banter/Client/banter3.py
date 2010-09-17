@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'banter3.ui'
 #
-# Created: Tue Sep 14 15:13:47 2010
+# Created: Fri Sep 17 14:57:57 2010
 #      by: PyQt4 UI code generator 4.7.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,13 +12,13 @@ from PyQt4 import QtCore, QtGui
 class Ui_Mbanter3(object):
     def setupUi(self, Mbanter3):
         Mbanter3.setObjectName("Mbanter3")
-        Mbanter3.resize(451, 293)
-        Mbanter3.setStyleSheet("background-color: rgb(236, 218, 180);")
+        Mbanter3.resize(419, 117)
+        Mbanter3.setStyleSheet("background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));")
         Mbanter3.setUnifiedTitleAndToolBarOnMac(True)
         self.add = QtGui.QWidget(Mbanter3)
         self.add.setObjectName("add")
         self.lineEdit = QtGui.QLineEdit(self.add)
-        self.lineEdit.setGeometry(QtCore.QRect(62, 60, 301, 27))
+        self.lineEdit.setGeometry(QtCore.QRect(50, 20, 301, 27))
         font = QtGui.QFont()
         font.setFamily("Tlwg Typist")
         font.setPointSize(11)
@@ -26,8 +26,8 @@ class Ui_Mbanter3(object):
         self.lineEdit.setFont(font)
         self.lineEdit.setStyleSheet("background-color: rgb(255, 255, 255);")
         self.lineEdit.setObjectName("lineEdit")
-        self.send = QtGui.QPushButton(self.add)
-        self.send.setGeometry(QtCore.QRect(150, 110, 93, 27))
+        self.send = QtGui.QCommandLinkButton(self.add)
+        self.send.setGeometry(QtCore.QRect(250, 60, 91, 31))
         self.send.setObjectName("send")
         Mbanter3.setCentralWidget(self.add)
         self.statusbar = QtGui.QStatusBar(Mbanter3)
@@ -35,8 +35,6 @@ class Ui_Mbanter3(object):
         Mbanter3.setStatusBar(self.statusbar)
 
         self.retranslateUi(Mbanter3)
-        QtCore.QObject.connect(self.lineEdit, QtCore.SIGNAL("textChanged(QString)"), self.send.show)
-        QtCore.QObject.connect(self.send, QtCore.SIGNAL("clicked()"), Mbanter3.close)
         QtCore.QMetaObject.connectSlotsByName(Mbanter3)
 
     def retranslateUi(self, Mbanter3):
