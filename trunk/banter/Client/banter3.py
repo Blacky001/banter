@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'banter3.ui'
 #
-# Created: Fri Sep 17 14:57:57 2010
+# Created: Fri Sep 17 15:02:11 2010
 #      by: PyQt4 UI code generator 4.7.2
 #
 # WARNING! All changes made in this file will be lost!
@@ -35,6 +35,7 @@ class Ui_Mbanter3(object):
         Mbanter3.setStatusBar(self.statusbar)
 
         self.retranslateUi(Mbanter3)
+        QtCore.QObject.connect(self.lineEdit, QtCore.SIGNAL("textChanged(QString)"), self.send.show)
         QtCore.QMetaObject.connectSlotsByName(Mbanter3)
 
     def retranslateUi(self, Mbanter3):
