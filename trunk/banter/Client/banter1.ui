@@ -6,48 +6,23 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>455</width>
-    <height>359</height>
+    <width>451</width>
+    <height>307</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>banter1</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(202, 202, 202);</string>
+   <string notr="true">background-color: rgb(90, 45, 67);
+background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0 rgba(35, 40, 3, 255), stop:0.16 rgba(136, 106, 22, 255), stop:0.225 rgba(166, 140, 41, 255), stop:0.285 rgba(204, 181, 74, 255), stop:0.345 rgba(235, 219, 102, 255), stop:0.415 rgba(245, 236, 112, 255), stop:0.52 rgba(209, 190, 76, 255), stop:0.57 rgba(187, 156, 51, 255), stop:0.635 rgba(168, 142, 42, 255), stop:0.695 rgba(202, 174, 68, 255), stop:0.75 rgba(218, 202, 86, 255), stop:0.815 rgba(208, 187, 73, 255), stop:0.88 rgba(187, 156, 51, 255), stop:0.935 rgba(137, 108, 26, 255), stop:1 rgba(35, 40, 3, 255));</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="signin">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>190</y>
-      <width>93</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>sign in</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="signup">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>20</y>
-      <width>93</width>
-      <height>27</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>sign up</string>
-    </property>
-   </widget>
    <widget class="QLineEdit" name="userentry">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>110</y>
+      <x>230</x>
+      <y>120</y>
       <width>191</width>
       <height>27</height>
      </rect>
@@ -62,8 +37,8 @@
    <widget class="QLineEdit" name="pwdentry">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>150</y>
+      <x>230</x>
+      <y>180</y>
       <width>191</width>
       <height>27</height>
      </rect>
@@ -78,11 +53,14 @@
    <widget class="QRadioButton" name="forgetid">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>190</y>
+      <x>240</x>
+      <y>220</y>
       <width>171</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>forgot your password?</string>
@@ -91,11 +69,14 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>110</y>
+      <x>230</x>
+      <y>100</y>
       <width>71</width>
       <height>20</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
     </property>
     <property name="text">
      <string>user name</string>
@@ -104,14 +85,49 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>230</x>
       <y>160</y>
       <width>71</width>
       <height>17</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
+    </property>
     <property name="text">
      <string>password</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="signup">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 170, 127);</string>
+    </property>
+    <property name="text">
+     <string>sign up</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="signin">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>250</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 170, 127);</string>
+    </property>
+    <property name="text">
+     <string>sign in</string>
     </property>
    </widget>
   </widget>
@@ -119,22 +135,6 @@
  </widget>
  <resources/>
  <connections>
-  <connection>
-   <sender>signin</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>update()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>311</x>
-     <y>294</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>491</x>
-     <y>287</y>
-    </hint>
-   </hints>
-  </connection>
   <connection>
    <sender>forgetid</sender>
    <signal>clicked()</signal>
