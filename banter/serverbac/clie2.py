@@ -1,9 +1,13 @@
 from twisted.internet.protocol import Protocol, ClientFactory
 from sys import stdout
 from twisted.internet import reactor
+
 class Echo(Protocol):
     def dataReceived(self, data):
-        stdout.write(data)
+	global connection
+        print "Server Says :",data
+	connection.transport.write(raw_input("Message: "))
+
 
 class EchoClientFactory(ClientFactory):
     def startedConnecting(self, connector):
@@ -17,6 +21,6 @@ class EchoClientFactory(ClientFactory):
     def clientConnectionFailed(self, connector, reason):
         print 'Connection failed. Reason:', reason
 
-reactor.connectTCP("localhost", 8007, EchoClientFactory())
+connection=reactor.connectTCP("localhost", 8007, EchoClientFactory())
 reactor.run()
 
