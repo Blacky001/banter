@@ -83,8 +83,14 @@ class Ui_MainWindow(object):
         self.menubar.addAction(self.menuUsers.menuAction())
         self.menubar.addAction(self.menuCall_history.menuAction())
         self.menubar.addAction(self.menuCall_duration.menuAction())
+	self.menuUsers.setEnabled(False)
+	self.menuCall_history.setEnabled(False)
+	self.menuCall_duration.setEnabled(False)
+	self.pushButton.setEnabled(False)
+	self.actionRestart.setEnabled(False)
 
-        self.retranslateUi(MainWindow)
+	self.retranslateUi(MainWindow)
+	
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):

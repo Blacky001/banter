@@ -34,10 +34,7 @@ background-color: rgb(139, 139, 157);""")
         self.label = QtGui.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(0, 0, 41, 31))
         self.label.setObjectName("label")
-        self.lineEdit_2 = QtGui.QLineEdit(Dialog)
-        self.lineEdit_2.setGeometry(QtCore.QRect(0, 270, 401, 41))
-        self.lineEdit_2.setStyleSheet("background-color: rgb(220, 225, 255);")
-        self.lineEdit_2.setObjectName("lineEdit_2")
+
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -53,5 +50,5 @@ background-color: rgb(139, 139, 157);""")
         self.pushButton.setText(QtGui.QApplication.translate("Dialog", "send", None, QtGui.QApplication.UnicodeUTF8))
         self.pushButton_2.setText(QtGui.QApplication.translate("Dialog", "stop", None, QtGui.QApplication.UnicodeUTF8))
         self.label.setText(QtGui.QApplication.translate("Dialog", "   To:", None, QtGui.QApplication.UnicodeUTF8))
-        self.lineEdit_2.setText(QtGui.QApplication.translate("Dialog", "type here", None, QtGui.QApplication.UnicodeUTF8))
+        #self.lineEdit_2.setText(QtGui.QApplication.translate("Dialog", "type here", None, QtGui.QApplication.UnicodeUTF8))
 
